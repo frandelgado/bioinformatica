@@ -1,6 +1,6 @@
 from Bio import SeqIO
-gbk_filename = "NC_000207-3.gbk"
-faa_filename = "NC_000207-3_converted.fna"
+gbk_filename = "sequences/NC_000207-3.gbk"
+faa_filename = "sequences/NC_000207-3_converted.fna"
 
 input_handle = open(gbk_filename, "r")
 output_handle = open(faa_filename, "w")
