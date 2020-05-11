@@ -1,0 +1,94 @@
+LOCUS       NG_000006                843 bp    DNA     linear   PRI 01-NOV-2019
+DEFINITION  Homo sapiens alpha globin region (HBA@); and hemoglobin subunit
+            alpha 1 (HBA1); and hemoglobin subunit alpha 2 (HBA2); and
+            hemoglobin subunit mu (HBM); and hemoglobin subunit theta 1 (HBQ1);
+            and hemoglobin subunit zeta (HBZ), RefSeqGene on chromosome 16.
+ACCESSION   NG_000006 REGION: 37543..38385
+VERSION     NG_000006.1
+KEYWORDS    RefSeq; RefSeqGene.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 843)
+  AUTHORS   Zhang HB, Liu DP and Liang CC.
+  TITLE     The control of expression of the alpha-globin gene cluster
+  JOURNAL   Int. J. Hematol. 76 (5), 420-426 (2002)
+   PUBMED   12512836
+  REMARK    Review article
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from Z84721.1.
+            This sequence is a reference standard in the RefSeqGene project.
+            
+            Summary: The human alpha globin gene cluster located on chromosome
+            16 spans about 30 kb and includes 5 functional genes and 2
+            pseudogenes. The order of genes is: 5'- zeta - pseudozeta - mu
+            (also called alphaD) - pseudoalpha1 - alpha2 - alpha1 - theta1 -
+            3'. Hemoglobin zeta and theta are expressed in early embryonic and
+            fetal erythroid tissues, while hemoglobin alpha is produced
+            throughout fetal and adult life. The alpha 2 and alpha 1 coding
+            sequences are identical, however, the 2 genes differ slightly over
+            the 5' untranslated regions and the introns, but significantly over
+            the 3' untranslated regions. Two alpha chains combine with two beta
+            chains to constitute HbA, which in normal adult life comprises
+            about 97% of the total hemoglobin. Alpha thalassemias result from
+            the deletion of alpha genes. [provided by RefSeq, Jul 2015].
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-43058             Z84721.1           1-43058
+FEATURES             Location/Qualifiers
+     source          1..843
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+                     /chromosome="16"
+                     /map="16p13.3"
+     gene            1..843
+                     /gene="HBA1"
+                     /gene_synonym="ECYT7; HBA-T3; HBH; METHBA"
+                     /note="hemoglobin subunit alpha 1"
+                     /db_xref="GeneID:3039"
+                     /db_xref="HGNC:HGNC:4823"
+                     /db_xref="MIM:141800"
+     mRNA            join(1..132,250..454,604..843)
+                     /gene="HBA1"
+                     /gene_synonym="ECYT7; HBA-T3; HBH; METHBA"
+                     /product="hemoglobin subunit alpha 1"
+                     /transcript_id="NM_000558.5"
+                     /db_xref="GeneID:3039"
+                     /db_xref="HGNC:HGNC:4823"
+                     /db_xref="MIM:141800"
+     CDS             join(38..132,250..454,604..732)
+                     /gene="HBA1"
+                     /gene_synonym="ECYT7; HBA-T3; HBH; METHBA"
+                     /note="alpha one globin; hemoglobin alpha 1 globin chain;
+                     delta globin; alpha-2 globin chain; hemoglobin, alpha 1;
+                     alpha globin chain"
+                     /codon_start=1
+                     /product="hemoglobin subunit alpha"
+                     /protein_id="NP_000549.1"
+                     /db_xref="CCDS:CCDS10399.1"
+                     /db_xref="GeneID:3039"
+                     /db_xref="HGNC:HGNC:4823"
+                     /db_xref="MIM:141800"
+                     /translation="MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYF
+                     PHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLL
+                     SHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+ORIGIN      
+        1 actcttctgg tccccacaga ctcagagaga acccaccatg gtgctgtctc ctgccgacaa
+       61 gaccaacgtc aaggccgcct ggggtaaggt cggcgcgcac gctggcgagt atggtgcgga
+      121 ggccctggag aggtgaggct ccctcccctg ctccgacccg ggctcctcgc ccgcccggac
+      181 ccacaggcca ccctcaaccg tcctggcccc ggacccaaac cccacccctc actctgcttc
+      241 tccccgcagg atgttcctgt ccttccccac caccaagacc tacttcccgc acttcgacct
+      301 gagccacggc tctgcccagg ttaagggcca cggcaagaag gtggccgacg cgctgaccaa
+      361 cgccgtggcg cacgtggacg acatgcccaa cgcgctgtcc gccctgagcg acctgcacgc
+      421 gcacaagctt cgggtggacc cggtcaactt caaggtgagc ggcgggccgg gagcgatctg
+      481 ggtcgagggg cgagatggcg ccttcctcgc agggcagagg atcacgcggg ttgcgggagg
+      541 tgtagcgcag gcggcggctg cgggcctggg ccctcggccc cactgaccct cttctctgca
+      601 cagctcctaa gccactgcct gctggtgacc ctggccgccc acctccccgc cgagttcacc
+      661 cctgcggtgc acgcctccct ggacaagttc ctggcttctg tgagcaccgt gctgacctcc
+      721 aaataccgtt aagctggagc ctcggtggcc atgcttcttg ccccttgggc ctccccccag
+      781 cccctcctcc ccttcctgca cccgtacccc cgtggtcttt gaataaagtc tgagtgggcg
+      841 gca
+//
+
