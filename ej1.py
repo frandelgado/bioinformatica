@@ -2,8 +2,9 @@ from Bio import SeqIO
 from Bio import SeqRecord
 import re
 
-gbk_filename = "sequences/NC_000207-3.gbk"
-fas_filename = "sequences/NC_000207-3_translated.fasta"
+gen = "hemoglobin"
+gbk_filename = "sequences/"+gen+".gbk"
+fas_filename = "sequences/"+gen+"_translated.fasta"
 table = 1
 min_pro_len = 50
 only_save_longest = True
