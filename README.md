@@ -21,6 +21,32 @@ Clustal Omega se puede instalar en linux directamente del repositorio apt corrie
 sudo apt-get install -y clustalw
 ```
 
+## Ejercicio 1
+El script del ejercicio 1 lee un archivo de mRNA en formato GenBank, 
+genera la/las proteinas posibles a partir de dicho gen y las guarda 
+en un archivo en formato FASTA. Para esto, lee los 6 ORF y puede 
+guardar todas proteinas de un largo mayor a lo especificado por parametro 
+o bien puede guardar sólo la mas larga.
+
+El script traduce la secuencia de nucleótidos a aminoácidos, la corta en los 
+codones de stop y evalua proteínas candidatas desde cada metionina para cada 
+subsecuencia. Esto lo realiza para cada ORF.
+
+### Configuración
+Para configurar el script se deben configurar las siguientes variables dentro del mismo:
+- GENE: Nombre del archivo GenBank sin extensión. Determina tambien el nombre del
+ archivo FASTA de salida.
+- TABLE: Tabla de traducción de proteínas a utilizar, por defecto es 1. De no ser 1 ver
+ atributo transl_table del CDS del gen.
+- MIN_PRO_LEN: Largo mínimo que debe tener la proteina para ser considerada como candidata.
+- ONLY_SAVE_LONGEST: Si es verdadero solo se guarda la proteína mas larga.
+
+### Ejecutar el script
+Luego, simplemente correr el script con 
+```
+python ej1.py
+```
+
 ## Ejercicio 2
 ### Configuración
 Para configurar el script se requieren ajustar los siguientes parametros dentro del archivo ej2.py
