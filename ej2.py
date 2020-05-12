@@ -1,22 +1,22 @@
 from Bio.Blast import NCBIWWW, NCBIXML
 from Bio.Blast.Applications import NcbiblastxCommandline
 
-ONLINE = False
+ONLINE = True
 BLAST_EXECUTABLE = "/usr/bin/blastp"
 E_VALUE_THRESH = 10
 PROT_DB = "blast/ncbi-blast-2.10.0+/data/swissprot"
 
 
-FASTA_FILE = "sequences/ncbi_hemoglobin_translated.fasta"
+FASTA_FILE = "sequences/huntingtin.fasta"
 RESULTS_XML = "blast_reports/my_blast.xml"
 
-fasta_string = open("sequences/NC_000207-3_translated.fasta").read()
-
 if ONLINE:
+    fasta_string = open(FASTA_FILE).read()
     result_handle = NCBIWWW.qblast("blastp", "swissprot", fasta_string, expect=10)
-    with open("my_blast.xml", "w") as out_handle:
+    with open(RESULTS_XML, "w+") as out_handle:
         out_handle.write(result_handle.read())
     result_handle.close()
+    result_handle = open(RESULTS_XML)
 else:
     blastx_cline = NcbiblastxCommandline(
         cmd=BLAST_EXECUTABLE,
